@@ -12,30 +12,6 @@ from thrift.transport import TSocket
 from thrift.transport import TTransport
 from thrift.protocol import TBinaryProtocol
 
-"""
-struct Balance {
-    1: double credit,
-    2: string currency
-}
-
-struct UserProfile {
-    1: i32 uid,
-    2: string name,
-    3: string blurb
-}
-
-service FooService {
-    string ping(),
-    Balance balance(1: i32 msisdn),
-    void portin(1: i32 msisdn),
-    void addcredit(1: i32 msisdn, 2: i32 amount),
-
-    void store(1: UserProfile user),
-    UserProfile retrieve(1: i32 uid)
-}
-
-"""
-
 try:
     # Make socket
     transport = TSocket.TSocket('localhost', 30303)
