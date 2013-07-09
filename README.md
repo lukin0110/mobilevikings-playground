@@ -1,4 +1,14 @@
-python-transportation-examples
-==============================
+mobilevikings-playground
+========================
+A playground.  Some examples and try-outs for exchanging data between services or code sample/recipes to use.
 
-A few example to transport data between services in python, rpc, thrift, protobuf, rest, ...
+Exchange data
+-------------
+* rpc
+* thrift
+* protobuf
+* rest
+
+Recipes
+-------
+...
