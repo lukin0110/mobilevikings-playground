@@ -1,0 +1,26 @@
+package foo;
+
+option py_generic_services = true;
+
+message BalanceRequest {
+    required int32 msisdn = 1;
+}
+
+message Balance {
+    required float credit = 1;
+    required string currency = 2;
+    required int64 valid_until = 3;
+    required int32 sms = 4;
+    required int32 data = 5;
+}
+
+message Credit {
+    required float amount = 1;
+    optional string status = 2;
+}
+
+
+service FooService
+{
+  rpc balance(BalanceRequest) returns(Balance);
+}
