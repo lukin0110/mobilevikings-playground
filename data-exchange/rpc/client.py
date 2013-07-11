@@ -2,7 +2,7 @@
 from datetime import datetime
 import xmlrpclib
 
-s = xmlrpclib.ServerProxy('http://localhost:8000/foo')
+s = xmlrpclib.ServerProxy('http://localhost:8000/xmlrpc/')
 
 print "\nAvailable method:"
 print s.system.listMethods()
