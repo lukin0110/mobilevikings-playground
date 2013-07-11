@@ -35,10 +35,11 @@ It only defines the data exchange format and does not implement RPC support or a
 Link: [Protocol Buffers](https://developers.google.com/protocol-buffers/docs/overview)
 
 Some links:
-* [Protobuf](https://developers.google.com/protocol-buffers/docs/overview)
 * Why? [Protobuf](https://developers.google.com/protocol-buffers/docs/pythontutorial)
 * [Floating sun](http://floatingsun.net/articles/thrift-vs-protocol-buffers/)
 
+### Generate code in Thrift and Protobuf
+ 
 Generate protobuf messages:
 `protoc -I=. --python_out=. messages.proto`
 
@@ -51,10 +52,10 @@ Generate thrift code:
 
 ## My personal preference
 
-1. rpc: it works out of the box in python. You don't need to develop a client or communication stuff.
-2. thrift: its language agnostic, it uses RPC. It gained traction in the open source community. Bit hard to install.
-3. rest: simple again, but to much boilerplate work for internal services.  Need to develop an API and a client.
-4. protobuf: it's robust and language agnostic. Although it's from google it lacks community and it doesn't support any
+1. **rpc**: it works out of the box in python. You don't need to develop client code and communication stuff.
+2. **thrift**: its language agnostic, it uses RPC. It gained traction in the open source community. Bit hard to install.
+3. **rest**: simple again, but to much boilerplate work for internal services.  Need to develop an API and a client.
+4. **protobuf**: it's robust and language agnostic. Although it's from google it lacks community and it doesn't support any
 communication protocol out of the box. It only focuses on the data.
 
 # Recipes
